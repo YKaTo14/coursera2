@@ -3,7 +3,6 @@
 from flask import Flask, render_template, request
 
 from EmotionDetection.emotion_detection import emotion_detector
-from EmotionDetection.emotion_detection import emotion_predictor
 
 
 app = Flask("Emotion Detection")
@@ -22,8 +21,7 @@ def sent_detector():
     if not text_to_detect:
         return "Invalid text! Please try again."
 
-    response = emotion_detector(text_to_detect)
-    formatted_response = emotion_predictor(response)
+    formatted_response = emotion_detector(text_to_detect)
 
     if formatted_response["dominant_emotion"] is None:
         return "Invalid text! Please try again."
