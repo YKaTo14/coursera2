@@ -3,7 +3,7 @@ import React from "react";
 const AboutUs = ({ onNavigate }) => {
   return (
     <section className="about-page">
-      <div className="content-card about-card">
+      <div className="about-us-container content-card about-card">
         <p className="eyebrow">About Paradise Nursery</p>
         <h2>We bring calm, color, and fresh air into everyday spaces.</h2>
         <p>
@@ -39,4 +39,3 @@ const AboutUs = ({ onNavigate }) => {
 };
 
 export default AboutUs;
-

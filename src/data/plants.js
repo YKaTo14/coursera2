@@ -42,6 +42,27 @@ export const plantCatalog = [
     thumbnail: svgThumbnail("#D6F1E4", "#368D63", "Snake Plant"),
   },
   {
+    id: "string-of-hearts",
+    name: "String of Hearts",
+    category: "Succulents",
+    price: 20,
+    thumbnail: svgThumbnail("#EAF8E6", "#5B9C63", "Hearts"),
+  },
+  {
+    id: "echeveria",
+    name: "Echeveria",
+    category: "Succulents",
+    price: 24,
+    thumbnail: svgThumbnail("#E5F6E8", "#4E9D66", "Echeveria"),
+  },
+  {
+    id: "haworthia",
+    name: "Haworthia",
+    category: "Succulents",
+    price: 19,
+    thumbnail: svgThumbnail("#EEF8F0", "#4D8A62", "Haworthia"),
+  },
+  {
     id: "peace-lily",
     name: "Peace Lily",
     category: "Tropical",
@@ -61,6 +82,27 @@ export const plantCatalog = [
     category: "Tropical",
     price: 38,
     thumbnail: svgThumbnail("#F1F8E7", "#487D4E", "Bird"),
+  },
+  {
+    id: "rubber-plant",
+    name: "Rubber Plant",
+    category: "Tropical",
+    price: 32,
+    thumbnail: svgThumbnail("#E7F5EE", "#4C8F61", "Rubber"),
+  },
+  {
+    id: "zz-plant",
+    name: "ZZ Plant",
+    category: "Tropical",
+    price: 30,
+    thumbnail: svgThumbnail("#ECF9E9", "#52925C", "ZZ Plant"),
+  },
+  {
+    id: "dracaena",
+    name: "Dracaena",
+    category: "Tropical",
+    price: 27,
+    thumbnail: svgThumbnail("#EAF6EE", "#4C8A62", "Dracaena"),
   },
   {
     id: "air-plant",
@@ -83,7 +125,27 @@ export const plantCatalog = [
     price: 19,
     thumbnail: svgThumbnail("#EEF8F0", "#4E8F69", "Fern"),
   },
+  {
+    id: "staghorn-fern",
+    name: "Staghorn Fern",
+    category: "Air Plants",
+    price: 29,
+    thumbnail: svgThumbnail("#F0FAF3", "#5A9A77", "Staghorn"),
+  },
+  {
+    id: "moss-ball",
+    name: "Moss Ball",
+    category: "Air Plants",
+    price: 14,
+    thumbnail: svgThumbnail("#F4FAF0", "#6B9D61", "Moss Ball"),
+  },
+  {
+    id: "venus-flytrap",
+    name: "Venus Flytrap",
+    category: "Air Plants",
+    price: 21,
+    thumbnail: svgThumbnail("#EEF8E9", "#5A9351", "Flytrap"),
+  },
 ];
 
 export const plantCategories = [...new Set(plantCatalog.map((plant) => plant.category))];
-

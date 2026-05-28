@@ -1,6 +1,6 @@
-# Paradise Nursery
+# e-plantShopping
 
-Paradise Nursery is a plant shop landing page and shopping cart exercise built with React and Redux.
+e-plantShopping is a plant shop landing page and shopping cart exercise built with React and Redux.
 
 ## Project Overview
 
@@ -29,4 +29,3 @@ The assignment asks for the public GitHub URLs of:
 5. `CartSlice.jsx`
 6. `ProductList.jsx`
 7. `CartItem.jsx`
-

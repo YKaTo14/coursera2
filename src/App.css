@@ -46,8 +46,13 @@ button {
   place-items: center;
   padding: 2rem;
   position: relative;
-  background-image:
-    linear-gradient(180deg, rgba(9, 24, 18, 0.2), rgba(9, 24, 18, 0.55)),
+}
+
+.background-image {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: linear-gradient(180deg, rgba(9, 24, 18, 0.2), rgba(9, 24, 18, 0.55)),
     url("./assets/paradise-bg.svg");
   background-size: cover;
   background-position: center;
@@ -114,9 +119,7 @@ button {
 
 .page-shell {
   min-height: 100vh;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.92)),
-    url("./assets/paradise-bg.svg");
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.92));
   background-size: cover;
   background-position: center top;
 }
@@ -275,9 +278,7 @@ button {
   padding: 2rem;
   display: grid;
   place-items: center;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.96)),
-    url("./assets/paradise-bg.svg");
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.96));
   background-size: cover;
 }
 

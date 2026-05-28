@@ -7,7 +7,9 @@ const CartItem = ({ currentView, onNavigate }) => {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
   const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
-  const cartTotal = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  const calculateTotalAmount = () =>
+    cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  const cartTotal = calculateTotalAmount();
 
   const handleCheckout = () => {
     window.alert("Coming Soon");
@@ -24,7 +26,7 @@ const CartItem = ({ currentView, onNavigate }) => {
         </div>
 
         {cartItems.length === 0 ? (
-          <section className="content-card empty-state">
+          <section className="content-card empty-state cart-item-container">
             <h3>Your cart is empty</h3>
             <p>Browse the plant catalog and add a few favorites.</p>
             <button className="primary-button" onClick={() => onNavigate("products")}>
@@ -38,7 +40,7 @@ const CartItem = ({ currentView, onNavigate }) => {
                 const total = item.price * item.quantity;
 
                 return (
-                  <article key={item.id} className="cart-row">
+                  <article key={item.id} className="cart-row cart-item-container">
                     <img src={item.thumbnail} alt={item.name} />
                     <div className="cart-row-main">
                       <div className="cart-row-top">
@@ -92,4 +94,3 @@ const CartItem = ({ currentView, onNavigate }) => {
 };
 
 export default CartItem;
-

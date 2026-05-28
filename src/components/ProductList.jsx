@@ -65,4 +65,3 @@ const ProductList = ({ currentView, onNavigate }) => {
 };
 
 export default ProductList;
-

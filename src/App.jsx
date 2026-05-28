@@ -8,14 +8,15 @@ import "./App.css";
 
 const LandingPage = ({ onNavigate }) => (
   <section className="landing-page">
+    <div className="background-image" aria-hidden="true" />
     <div className="landing-overlay" />
     <div className="landing-content">
       <p className="eyebrow">Indoor plants and calm living</p>
-      <h1>Paradise Nursery</h1>
+      <h1>Welcome to Paradise Nursery</h1>
       <p>
         Bring home healthy plants that add life, texture, and freshness to your space.
       </p>
-      <button className="primary-button" onClick={() => onNavigate("about")}>
+      <button className="primary-button" onClick={() => onNavigate("products")}>
         Get Started
       </button>
     </div>
@@ -42,4 +43,3 @@ const App = () => (
 );
 
 export default App;
-
