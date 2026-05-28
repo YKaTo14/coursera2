@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emotion Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <h1>Emotion Detector</h1>
+      <p>Enter a text statement and run emotion analysis.</p>
+
+      <div class="controls">
+        <input id="textToAnalyze" type="text" placeholder="Type your text here" />
+        <button id="runBtn" type="button">Analyze</button>
+      </div>
+
+      <p id="result" class="result"></p>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
