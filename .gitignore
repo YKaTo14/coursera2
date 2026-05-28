@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.venv/
+
+onlinecourse_django/.chrome-profile/
+onlinecourse_django/.drivers/
+onlinecourse_django/db.sqlite3
+onlinecourse_django/server.out.txt
+onlinecourse_django/server.err.txt
+onlinecourse_django/03-admin-site.png
+onlinecourse_django/07-final.png
